@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,7 +56,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background: 
+            background:
                 linear-gradient(transparent 95%, var(--primary-color) 95%),
                 linear-gradient(90deg, transparent 95%, var(--primary-color) 95%);
             background-size: 50px 50px;
@@ -64,8 +65,13 @@
         }
 
         @keyframes gridMove {
-            from { transform: translateY(0); }
-            to { transform: translateY(50px); }
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(50px);
+            }
         }
 
         .hero-content {
@@ -78,19 +84,36 @@
             font-size: 4em;
             font-weight: 800;
             position: relative;
-            text-shadow: 
+            text-shadow:
                 2px 2px var(--primary-color),
                 -2px -2px var(--secondary-color);
             animation: glitchText 3s infinite;
         }
 
         @keyframes glitchText {
-            0% { transform: translate(0); }
-            20% { transform: translate(-2px, 2px); }
-            40% { transform: translate(2px, -2px); }
-            60% { transform: translate(-2px, -2px); }
-            80% { transform: translate(2px, 2px); }
-            100% { transform: translate(0); }
+            0% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translate(-2px, 2px);
+            }
+
+            40% {
+                transform: translate(2px, -2px);
+            }
+
+            60% {
+                transform: translate(-2px, -2px);
+            }
+
+            80% {
+                transform: translate(2px, 2px);
+            }
+
+            100% {
+                transform: translate(0);
+            }
         }
 
         .subtitle {
@@ -134,7 +157,9 @@
         }
 
         @keyframes lineWidth {
-            to { width: 100%; }
+            to {
+                width: 100%;
+            }
         }
 
         .skills-container {
@@ -278,7 +303,7 @@
             .glitch-text {
                 font-size: 2.5em;
             }
-            
+
             .subtitle {
                 font-size: 1.2em;
             }
@@ -288,117 +313,117 @@
             }
         }
 
-            /* Experience Section Styles */
-    .timeline {
-        position: relative;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+        /* Experience Section Styles */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-    .timeline-item {
-        background: var(--card-bg);
-        border-radius: 15px;
-        padding: 2rem;
-        margin: 2rem 0;
-        border-left: 4px solid var(--primary-color);
-        position: relative;
-        transition: all 0.3s ease;
-    }
+        .timeline-item {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 4px solid var(--primary-color);
+            position: relative;
+            transition: all 0.3s ease;
+        }
 
-    .timeline-item:hover {
-        transform: translateX(10px);
-        box-shadow: 0 5px 15px rgba(0, 255, 136, 0.2);
-    }
+        .timeline-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.2);
+        }
 
-    .experience-date {
-        color: var(--primary-color);
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-    }
+        .experience-date {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
 
-    .experience-title {
-        font-size: 1.5em;
-        color: var(--secondary-color);
-        margin-bottom: 0.5rem;
-    }
+        .experience-title {
+            font-size: 1.5em;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
 
-    .experience-company {
-        color: #fff;
-        font-weight: 500;
-        margin-bottom: 1rem;
-    }
+        .experience-company {
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
 
-    .responsibilities {
-        list-style: none;
-    }
+        .responsibilities {
+            list-style: none;
+        }
 
-    .responsibilities li {
-        margin: 0.5rem 0;
-        padding-left: 1.5rem;
-        position: relative;
-    }
+        .responsibilities li {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
 
-    .responsibilities li::before {
-        content: '▹';
-        position: absolute;
-        left: 0;
-        color: var(--primary-color);
-    }
+        .responsibilities li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
 
-    /* Project Section Styles */
-    .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 2rem;
-        padding: 2rem 0;
-    }
+        /* Project Section Styles */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
 
-    .project-card {
-        background: var(--card-bg);
-        border-radius: 15px;
-        padding: 2rem;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        transition: all 0.3s ease;
-    }
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
 
-    .tech-stack {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin: 1rem 0;
-    }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
 
-    .tech-tag {
-        background: rgba(0, 255, 136, 0.1);
-        color: var(--primary-color);
-        padding: 0.3rem 0.8rem;
-        border-radius: 15px;
-        font-size: 0.9em;
-    }
+        .tech-tag {
+            background: rgba(0, 255, 136, 0.1);
+            color: var(--primary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
 
-    .project-links {
-        display: flex;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
 
-    .project-link {
-        color: var(--primary-color);
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        transition: all 0.3s ease;
-    }
+        .project-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
 
-    .project-link:hover {
-        color: var(--secondary-color);
-    }
-
+        .project-link:hover {
+            color: var(--secondary-color);
+        }
     </style>
 </head>
+
 <body>
-       <div class="cursor-glow"></div>
+    <div class="cursor-glow"></div>
 
     <header>
         <div class="cyber-grid"></div>
@@ -410,7 +435,11 @@
 
     <section id="about">
         <h2 class="section-title">About Me</h2>
-        <p>I am a results-driven full-stack Core developer with over 2.5 years of experience in designing, developing, and deploying scalable web and mobile solutions. My expertise lies in full-stack development, particularly with Angular, .NET Core, ASP.NET Core, and SQL Server. I have a proven track record of integrating third-party tools to create business-critical applications that enhance operational efficiency and improve user experiences.</p>
+        <p>I am a results-driven full-stack Core developer with over 2.5 years of experience in designing, developing,
+            and deploying scalable web and mobile solutions. My expertise lies in full-stack development, particularly
+            with Angular, .NET Core, ASP.NET Core, and SQL Server. I have a proven track record of integrating
+            third-party tools to create business-critical applications that enhance operational efficiency and improve
+            user experiences.</p>
     </section>
 
     <section id="experience">
@@ -422,9 +451,12 @@
                     <div class="experience-title">ASP.NET Developer</div>
                     <div class="experience-company">Xicom Technology - Mohali</div>
                     <ul class="responsibilities">
-                        <li>Developed high-performance RESTful APIs to support mobile applications, reducing response times by 20%</li>
-                        <li>Collaborated with UI/UX teams to enhance user interfaces, achieving a 15% improvement in user engagement</li>
-                        <li>Improved integration processes with MVC frameworks, ensuring seamless interoperability with existing systems</li>
+                        <li>Developed high-performance RESTful APIs to support mobile applications, reducing response
+                            times by 20%</li>
+                        <li>Collaborated with UI/UX teams to enhance user interfaces, achieving a 15% improvement in
+                            user engagement</li>
+                        <li>Improved integration processes with MVC frameworks, ensuring seamless interoperability with
+                            existing systems</li>
                     </ul>
                 </div>
             </div>
@@ -435,8 +467,10 @@
                     <div class="experience-title">ASP.NET Developer</div>
                     <div class="experience-company">Decoro Software Solution - Mohali</div>
                     <ul class="responsibilities">
-                        <li>Delivered cross-platform web solutions using Angular and .NET Core, increasing project delivery efficiency by 25%</li>
-                        <li>Maintained code quality and conducted unit testing to ensure 100% error-free deployments</li>
+                        <li>Delivered cross-platform web solutions using Angular and .NET Core, increasing project
+                            delivery efficiency by 25%</li>
+                        <li>Maintained code quality and conducted unit testing to ensure 100% error-free deployments
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -447,7 +481,8 @@
                     <div class="experience-title">Junior Full Stack Developer</div>
                     <div class="experience-company">Antvert Software Solution - Varanasi</div>
                     <ul class="responsibilities">
-                        <li>Built dynamic, responsive web applications using modern frameworks and technologies, enhancing user satisfaction</li>
+                        <li>Built dynamic, responsive web applications using modern frameworks and technologies,
+                            enhancing user satisfaction</li>
                         <li>Improved database query performance by optimizing stored procedures and indexes</li>
                     </ul>
                 </div>
@@ -476,9 +511,10 @@
             <div class="skill-item"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
             <!-- <div class="skill-item"><i class="fas fa-flask"></i> Postman</div> -->
             <div class="skill-item">
-                <img src="https://res.cloudinary.com/postman/image/upload/t_team_logo_pubdoc/v1/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8" alt="Postman" width="20"> Postman
+                <img src="https://res.cloudinary.com/postman/image/upload/t_team_logo_pubdoc/v1/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8"
+                    alt="Postman" width="20"> Postman
             </div>
-            
+
         </div>
     </section>
 
@@ -488,10 +524,13 @@
         <div class="projects-grid">
             <div class="project-card">
                 <h3 class="project-title">Aquaxel</h3>
-                <p>✅ Built and deployed a scalable SaaS platform for shrimp farming operations, streamlining tank management, feeding schedules, and real-time monitoring.
-                    <br>✅ Developed advanced biomass calculation algorithms to enhance accuracy in shrimp population tracking, optimizing farm productivity.
-                    <br>✅ Implemented multi-tenant architecture, enabling each farm to have a dedicated, customizable portal for independent management and seamless user experience.                    
-                    </p>
+                <p>✅ Built and deployed a scalable SaaS platform for shrimp farming operations, streamlining tank
+                    management, feeding schedules, and real-time monitoring.
+                    <br>✅ Developed advanced biomass calculation algorithms to enhance accuracy in shrimp population
+                    tracking, optimizing farm productivity.
+                    <br>✅ Implemented multi-tenant architecture, enabling each farm to have a dedicated, customizable
+                    portal for independent management and seamless user experience.
+                </p>
                 <div class="tech-stack">
                     <span class="tech-tag">ASP.NET Core</span>
                     <span class="tech-tag">Angular</span>
@@ -506,32 +545,59 @@
                     <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
                 </div> -->
             </div>
-    
             <div class="project-card">
-                <h3 class="project-title">Grua Towing</h3>
-                <p>✅	Created two mobile and web applications—one for service providers and another for users—to manage car services.
-                    <br>✅	Implemented real-time driver tracking functionality to optimize service delivery.
-                    <br>✅	Integrated UPayments gateway for secure and seamless online transactions, enhancing trust and usability.  
-                    </p>
+                <h3 class="project-title">Equipro</h3>
+                <p>✅ Developed a role-based equine care platform where practitioners manage clients, horse profiles,
+                    appointments, session reports, and checkouts.
+                    <br>✅ Designed a multi-business client portal, allowing normal users to be associated with multiple
+                    practitioners, track appointments, and manage invoices.
+                    <br>✅ Streamlined operational workflows, improving scheduling efficiency and reducing administrative
+                    overhead by 20%.
+
+                </p>
                 <div class="tech-stack">
-                    <span class="tech-tag">ASP.NET Core</span>
-                    <span class="tech-tag">UPayment</span>
-                    <span class="tech-tag">SQL Server</span>
-                    <span class="tech-tag">Google Maps API</span>
-                    <span class="tech-tag">Stripe</span>
+                    <span class="tech-tag">ASP.NET MVC</span>
                     <span class="tech-tag">Entity Framework</span>
+                    <span class="tech-tag">SQL Server</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">Stripe</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://www.equiproconnect.com/" target="_blank" class="project-link"><i
+                            class="fas fa-external-link-alt"></i> Web site</a>
+                    <!-- <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a> -->
+                </div>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">Travel-Trivia</h3>
+                <p>✅ Engineered a platform for travellers to share stories across diverse categories, including business
+                    and events.
+                    <br>✅ Enhanced user interaction by introducing treasure hunt features and category-specific
+                    filtering.
+                    <br>✅ Fostered global engagement with multilingual support and interactive storytelling
+                    capabilities.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">ASP.NET MVC</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">SQL Server</span>
+                    <span class="tech-tag">Azure DevOps</span>
+                    <span class="tech-tag">Google Maps API</span>
+                    <span class="tech-tag">In-App Purchase</span>
+                    <span class="tech-tag">Git</span>
                 </div>
                 <!-- <div class="project-links">
                     <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                     <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
                 </div> -->
             </div>
-    
+
+
             <div class="project-card">
                 <h3 class="project-title">Today Fit</h3>
-                <p>✅	Developed applications for trainers and users, streamlining personal training and event bookings.
-                    <br>✅	Introduced admin panel features, enabling event creation and real-time service management
-                    </p>
+                <p>✅ Developed applications for trainers and users, streamlining personal training and event bookings.
+                    <br>✅ Introduced admin panel features, enabling event creation and real-time service management
+                </p>
                 <div class="tech-stack">
                     <span class="tech-tag">ASP.NET Core</span>
                     <span class="tech-tag">Stripe</span>
@@ -545,20 +611,22 @@
                     <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
                 </div> -->
             </div>
-    
+
             <div class="project-card">
-                <h3 class="project-title">Equipro</h3>
-                <p>✅ Developed a role-based equine care platform where practitioners manage clients, horse profiles, appointments, session reports, and checkouts.
-                    <br>✅ Designed a multi-business client portal, allowing normal users to be associated with multiple practitioners, track appointments, and manage invoices.
-                    <br>✅ Streamlined operational workflows, improving scheduling efficiency and reducing administrative overhead by 20%.
-                    
-                    </p>
+                <h3 class="project-title">Grua Towing</h3>
+                <p>✅ Created two mobile and web applications—one for service providers and another for users—to manage
+                    car services.
+                    <br>✅ Implemented real-time driver tracking functionality to optimize service delivery.
+                    <br>✅ Integrated UPayments gateway for secure and seamless online transactions, enhancing trust and
+                    usability.
+                </p>
                 <div class="tech-stack">
-                    <span class="tech-tag">ASP.NET MVC</span>
-                    <span class="tech-tag">Angular</span>
+                    <span class="tech-tag">ASP.NET Core</span>
+                    <span class="tech-tag">UPayment</span>
                     <span class="tech-tag">SQL Server</span>
-                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">Google Maps API</span>
                     <span class="tech-tag">Stripe</span>
+                    <span class="tech-tag">Entity Framework</span>
                 </div>
                 <!-- <div class="project-links">
                     <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -567,9 +635,10 @@
             </div>
             <div class="project-card">
                 <h3 class="project-title">Livewire</h3>
-                <p>✅	Developed a professional networking platform enabling users to connect with nearby professionals based on shared interests.
-                    <br>✅	Integrated chat functionality with SignalR for real-time communication.
-                    </p>
+                <p>✅ Developed a professional networking platform enabling users to connect with nearby professionals
+                    based on shared interests.
+                    <br>✅ Integrated chat functionality with SignalR for real-time communication.
+                </p>
                 <div class="tech-stack">
                     <span class="tech-tag">ASP.NET Core</span>
                     <span class="tech-tag">SignalR</span>
@@ -584,31 +653,13 @@
                     <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
                 </div> -->
             </div>
-            <div class="project-card">
-                <h3 class="project-title">Travel-Trivia</h3>
-                <p>✅	Engineered a platform for travellers to share stories across diverse categories, including business and events.
-                    <br>✅	Enhanced user interaction by introducing treasure hunt features and category-specific filtering.
-                    <br>✅	Fostered global engagement with multilingual support and interactive storytelling capabilities.
-                    </p>
-                <div class="tech-stack">
-                    <span class="tech-tag">ASP.NET MVC</span>
-                    <span class="tech-tag">Firebase</span>
-                    <span class="tech-tag">SQL Server</span>
-                    <span class="tech-tag">Azure DevOps</span>
-                    <span class="tech-tag">Google Maps API</span>                    
-                    <span class="tech-tag">In-App Purchase</span>
-                    <span class="tech-tag">Git</span>
-                </div>
-                <!-- <div class="project-links">
-                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                </div> -->
-            </div>
+
             <div class="project-card">
                 <h3 class="project-title">AdFortune</h3>
-                <p>✅	Designed a weekly prize draw system requiring users to watch Google Ads to qualify for entry.
-                    <br>✅	Created an admin dashboard for managing entries and selecting winners, improving transparency and fairness.
-                    </p>
+                <p>✅ Designed a weekly prize draw system requiring users to watch Google Ads to qualify for entry.
+                    <br>✅ Created an admin dashboard for managing entries and selecting winners, improving transparency
+                    and fairness.
+                </p>
                 <div class="tech-stack">
                     <span class="tech-tag">ASP.NET COre</span>
                     <span class="tech-tag">Entity Framework</span>
@@ -623,7 +674,7 @@
                 </div> -->
             </div>
         </div>
-    
+
     </section>
 
     <section id="education">
@@ -695,4 +746,5 @@
         });
     </script>
 </body>
+
 </html>
